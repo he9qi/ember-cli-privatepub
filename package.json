@@ -1,7 +1,7 @@
 {
-  "name": "ember-cli-heyook-service",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "ember-cli-privatepub",
+  "version": "0.0.1",
+  "description": "PrivatePub for Ember.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Qi He <qhe@heyook.com> (https://github.com/he9qi)",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",

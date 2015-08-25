@@ -1,25 +1,6 @@
-# Ember-cli-heyook-service
+# PrivatePub for Ember
 
-This README outlines the details of collaborating on this Ember addon.
+This Ember CLI addon provides subscription functionality for
+[private_pub_server](https://github.com/he9lin/private_pub_server) to ember app.
 
-## Installation
-
-* `git clone` this repository
-* `npm install`
-* `bower install`
-
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+This is a WIP library.
