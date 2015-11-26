@@ -1,11 +1,18 @@
 import Ember from "ember";
 
+function lookupFactory(app, name) {
+  if (app.resolveRegistration) {
+    return app.resolveRegistration(name);
+  }
+  return app.container.lookupFactory(name);
+}
+
 export function initialize(instance) {
-  var config     = instance.container.lookupFactory('config:environment');
+  let config     = lookupFactory(instance, 'config:environment');
   var userPrefix = (config.PrivatePub || {}).userPrefix;
 
   if (Ember.isPresent(userPrefix)) {
-    instance.container.lookup('service:privatePub').set('userPrefix', userPrefix);
+    instance.lookup('service:privatePub').set('userPrefix', userPrefix);
   }
 }
 
