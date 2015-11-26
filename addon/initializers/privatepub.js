@@ -1,4 +1,4 @@
-export function initialize(registry, application) {
+export function initialize(application) {
   application.inject('controller', 'privatePub', 'service:privatePub');
   application.inject('model', 'privatePub', 'service:privatePub');
   application.inject('component', 'privatePub', 'service:privatePub');
